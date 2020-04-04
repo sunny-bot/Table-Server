@@ -5,8 +5,7 @@ import random
 alphabeticalList = ['Ahmad, Daanish']
 
 # read the namelist.csv
-with open('StudentList.csv') as csv_file:
-    csv_reader = csv.DictReader(csv_file)
+with open('/Users/sunnyzhao/Desktop/StudentList.csv', mode='r', encoding='utf-8-sig') as csv_file:    csv_reader = csv.DictReader(csv_file)
     for row in csv_reader:
             #add alphabeticalList entries
             alphabeticalList.append(f'{row["Ahmad"]}, {row["Daanish"]}') 
