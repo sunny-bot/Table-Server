@@ -1,16 +1,15 @@
-# sunny zhao
 import csv
 import random
 
 alphabeticalList = ['Ahmad, Daanish']
 
 # read the namelist.csv
-with open('/Users/sunnyzhao/Desktop/StudentList.csv', mode='r', encoding='utf-8-sig') as csv_file:    csv_reader = csv.DictReader(csv_file)
+with open('/Users/sunnyzhao/Desktop/StudentList.csv', mode='r', encoding='utf-8-sig') as csv_file:
+    csv_reader = csv.DictReader(csv_file)
     for row in csv_reader:
             #add alphabeticalList entries
-            alphabeticalList.append(f'{row["Ahmad"]}, {row["Daanish"]}') 
-            # Dannish has given me permission to use his name in my code and agreed that this isn't a privacy violation. 
-                                
+            alphabeticalList.append(f'{row["Ahmad"]}, {row["Daanish"]}')
+
 #convert list of strings to a list of objects
 listOfNames = list()
 for i in alphabeticalList:
